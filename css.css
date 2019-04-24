@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+/* ---------- Common Styles ---------- */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+}
+img {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+p {
+    text-align: justify;
+    text-indent: 1.5em;
+}
+.page-wrapper {
+    display: grid;
+    grid-template-rows: 80px auto 50px; /* Разделила страницу на 3 грид-ряда: header, main-content, footer*/
+}
+
+/* ---------- Header Styles ---------- */
+.page-header {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.page-header__title {
+    font-size: 55px;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+/* ---------- Aside Styles ---------- */
+.aside {
+    padding: 0 15px 0 15px;
+    font-size: 14px;
+}
+.left-aside {
+    border-right: 1px solid black;
+}
+.left-aside__title,
+.right-aside__title {
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    background-color: darkgray;
+}
+.left-aside__subtitle {
+    font-style: italic;
+    font-weight: 400;
+}
+.topics {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+}
+.topic {
+    display: grid;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.topic__title {
+    font-weight: 400;
+}
+.topic__page-number {
+    font-style: italic;
+    font-weight: 400;
+    text-align: right;
+}
+
+/* --------------- Main Content Styles --------------- */
+.main {
+    display: grid;
+    grid-template-columns: 15% 70% 15%; /* Aside по 15%, основной контент - 70% страницы*/
+}
+.center-content {
+    border-right: 1px solid black;
+    padding: 0 15px;
+}
+
+/* ---------- Main Content Header Styles ---------- */
+.center-content__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+.main-photo {
+    padding: 0;
+}
+.center-content__intro {
+    display: grid;
+}
+.intro__text--cite {
+    font-style: italic;
+    text-align: right;
+}
+.cite__caption {
+    font-weight: 400;
+}
+
+/* ---------- Main Content Article Styles ---------- */
+.articles__title {
+    font-weight: 400;
+    padding: 15px 0;
+}
+.article1__text, .article2__text {
+    column-count: 3;
+    text-align: justify;
+    column-gap: 2em;
+}
+
+/* ---------- Footer Styles ---------- */
+.page-footer {
+    background-color: rgb(197, 205, 207);
+    height: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+.page-footer__contacts {
+    text-align: center;
+    font-weight: 400;
+    padding-top: 15px;
+}
